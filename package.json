@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenliu8964/sit725-2023-t1-prac5.git"
+    "url": "git+https://github.com/somanshahuja/sit725-2023-t1-prac5.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephenliu8964/sit725-2023-t1-prac5/issues"
+    "url": "https://github.com/somanshahuja/sit725-2023-t1-prac5/issues"
   },
-  "homepage": "https://github.com/stephenliu8964/sit725-2023-t1-prac5#readme",
+  "homepage": "https://github.com/somanshahuja/sit725-2023-t1-prac5#readme",
   "dependencies": {
     "express": "^4.18.2",
     "mongodb": "^4.4.1",
