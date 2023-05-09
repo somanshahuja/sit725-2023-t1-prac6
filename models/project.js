@@ -1,16 +1,34 @@
+// let client = require('../dbConnect');
+// let projectCollection;
+
+// setTimeout( () => {
+//     projectCollection = client.db('test').collection('Cats');
+// }, 2000);
+
+// const insertProjects = (project, callback) => {
+//     projectCollection.insertOne(project, callback);
+// }
+
+// const getProjects = (callback) => {
+//     projectCollection.find().toArray(callback);
+// }
+
+// module.exports = {insertProjects, getProjects};
+
+
 let client = require('../dbConnect');
-let projectCollection;
+let collection = client.db('test').collection('Cats');
 
-setTimeout( () => {
-    projectCollection = client.db('test').collection('Cats');
-}, 2000);
-
-const insertProjects = (project, callback) => {
-    projectCollection.insertOne(project, callback);
+const insertCat = (cat, callback) => {
+    collection.insertOne(cat, callback);
 }
 
-const getProjects = (callback) => {
-    projectCollection.find().toArray(callback);
+const getCats = (callback) => {
+    collection.find().toArray(callback);
 }
 
-module.exports = {insertProjects, getProjects};
+const deleteCat = (cat, callback) => {
+    collection.deleteOne(cat, callback);
+}
+
+module.exports = {insertCat, getCats, deleteCat}
